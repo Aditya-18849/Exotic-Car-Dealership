@@ -1,7 +1,11 @@
 # Netlify reads this file automatically. The site is generated into dist/ at build time,
 # so Netlify must run the build and publish that folder (the repo root has no index.html).
+#
+# CLIENT PREVIEW: this currently builds with the labelled DEMO sample cars (noindex, no
+# structured data) so the collection can be shown to the client. Before launch, change the
+# command back to "npm run build" so only real stock from src/data/vehicles.json is published.
 [build]
-  command = "npm run build"
+  command = "npm run build:demo"
   publish = "dist"
 
 [build.environment]
