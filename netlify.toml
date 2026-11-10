@@ -1,0 +1,8 @@
+# Netlify reads this file automatically. The site is generated into dist/ at build time,
+# so Netlify must run the build and publish that folder (the repo root has no index.html).
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
