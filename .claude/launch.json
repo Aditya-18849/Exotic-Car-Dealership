@@ -1,0 +1,7 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "aspecs-dev", "runtimeExecutable": "npm", "runtimeArgs": ["run", "dev"], "port": 4321 },
+    { "name": "aspecs-static", "runtimeExecutable": "node", "runtimeArgs": ["scripts/serve.mjs", "dist", "4321"], "port": 4321 }
+  ]
+}

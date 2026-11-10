@@ -1,0 +1,21 @@
+{
+  "name": "a-specs-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A-SPECS: luxury and exotic pre-owned automobiles. Static site generator; Motion is bundled at build time with esbuild.",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:demo": "node scripts/build.mjs --demo",
+    "dev": "node scripts/build.mjs --demo && node scripts/serve.mjs dist 4321",
+    "preview": "node scripts/build.mjs && node scripts/serve.mjs dist 4322",
+    "check": "node scripts/build.mjs --strict"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "motion": "14.6.0"
+  }
+}

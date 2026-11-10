@@ -1,0 +1,35 @@
+{
+  "_readme": "Business details for the site. Leave a value as null until it is verified: the site hides anything that is null. See README.md.",
+  "brand": "A-SPECS",
+  "legalName": null,
+  "siteUrl": null,
+  "locale": "en-IN",
+  "currency": "INR",
+  "country": "IN",
+  "contact": {
+    "phone": null,
+    "whatsapp": null,
+    "email": null,
+    "address": null,
+    "city": null,
+    "hours": null,
+    "mapsUrl": null,
+    "mapsEmbedUrl": null
+  },
+  "social": {
+    "instagram": null
+  },
+  "forms": {
+    "_readme": "POST endpoint of a form service that accepts multipart/form-data and returns JSON (for example Formspree or Web3Forms). Empty means forms show an honest 'not connected' message.",
+    "endpoint": "",
+    "accessKey": ""
+  },
+  "services": {
+    "sellYourCar": true
+  },
+  "heroImage": {
+    "src": "https://images.unsplash.com/photo-1503376780353-7e6692767b70",
+    "alt": "Dark grey luxury sports saloon at speed on an open highway at dusk",
+    "credit": "Unsplash (Unsplash License)"
+  }
+}

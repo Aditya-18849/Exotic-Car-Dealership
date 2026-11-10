@@ -1,0 +1,29 @@
+<!doctype html>
+<!-- Source for src/static/og-image.png and icons. Re-render with: node scripts/render-images.mjs -->
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Instrument+Serif:ital@0;1&family=Inter:wght@600&display=block">
+<style>
+  html,body{margin:0;background:#0a0a0b;color:#f1eee8;overflow:hidden}
+  .og{width:1200px;height:630px;box-sizing:border-box;padding:72px 80px;display:flex;flex-direction:column;justify-content:space-between;
+      background:linear-gradient(90deg,rgba(10,10,11,.96) 0%,rgba(10,10,11,.75) 50%,rgba(10,10,11,.25) 100%),url(https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1400&q=80&auto=format&fit=crop) center/cover}
+  .wm{font:600 26px/1 Inter,sans-serif;letter-spacing:.32em}
+  .wm i{display:inline-block;width:20px;height:3px;background:#c9a96e;margin-right:.32em;vertical-align:middle}
+  h1{font:400 84px/1 "Instrument Serif",serif;margin:0;max-width:820px}
+  h1 em{color:#dcc08a}
+  .k{font:500 18px/1 "IBM Plex Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:#c9a96e}
+  .icon{width:180px;height:180px;display:flex;align-items:center;justify-content:center;background:#0a0a0b}
+  .icon svg{width:180px;height:180px}
+  body.mode-og .icon,body.mode-icon .og{display:none}
+  
+</style></head>
+<body>
+<div class="og">
+  <div class="wm">A<i></i>SPECS</div>
+  <div>
+    <h1>Exceptional cars, <em>presented to specification.</em></h1>
+    <p class="k">Pre-owned luxury · Sports · Exotic</p>
+  </div>
+</div>
+<div class="icon"><svg viewBox="0 0 32 32"><rect width="32" height="32" fill="#0a0a0b"/><path fill="#f1eee8" fill-rule="evenodd" d="M16 5 26 27h-3.8l-1.9-4.5h-8.6L9.8 27H6Zm-3 14.3h6L16 12Z"/><rect x="10" y="29" width="12" height="1.4" fill="#c9a96e"/></svg></div>
+<script>document.body.className='mode-'+(location.hash.slice(1)||'og')</script>
+</body></html>
